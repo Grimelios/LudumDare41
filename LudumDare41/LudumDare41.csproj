@@ -41,7 +41,18 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Game1.cs" />
+    <Compile Include="ContentLoader.cs" />
+    <Compile Include="Core\Component2D.cs" />
+    <Compile Include="Core\Sprite.cs" />
+    <Compile Include="Core\SpriteText.cs" />
+    <Compile Include="GameFunctions.cs" />
+    <Compile Include="Interfaces\IColorable.cs" />
+    <Compile Include="Interfaces\IDynamic.cs" />
+    <Compile Include="Interfaces\IPositionable.cs" />
+    <Compile Include="Interfaces\IRenderable.cs" />
+    <Compile Include="Interfaces\IRotatable.cs" />
+    <Compile Include="Interfaces\IScalable.cs" />
+    <Compile Include="MainGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
