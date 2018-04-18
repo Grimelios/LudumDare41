@@ -22,5 +22,10 @@ namespace LudumDare41
 
 			return new Vector2(x, y);
 		}
+
+		public static int EnumCount<T>()
+		{
+			return Enum.GetValues(typeof(T)).Length;
+		}
 	}
 }
