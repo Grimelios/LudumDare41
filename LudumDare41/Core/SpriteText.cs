@@ -36,14 +36,15 @@ namespace LudumDare41.Core
 
 				if (value != null)
 				{
-					Point dimensions = font.MeasureString(value).ToPoint();
-					origin = GameFunctions.ComputeOrigin(alignment, dimensions.X, dimensions.Y);
+					Vector2 dimensions = font.MeasureString(value);
+					origin = GameFunctions.ComputeOrigin(alignment, (int)dimensions.X, (int)dimensions.Y);
 				}
 			}
 		}
 
-		public override void Draw(SpriteBatch sb)
+		public override void Draw(SuperBatch sb)
 		{
+			sb.DrawString(font, value, Position, Color, Rotation, origin, Scale);
 		}
 	}
 }

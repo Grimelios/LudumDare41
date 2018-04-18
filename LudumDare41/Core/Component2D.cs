@@ -21,24 +21,24 @@ namespace LudumDare41.Core
 
 	public abstract class Component2D : IPositionable, IRotatable, IScalable, IColorable, IDynamic, IRenderable
 	{
-		protected Point origin;
+		protected Vector2 origin;
 
 		protected Component2D()
 		{
 			Color = Color.White;
-			Scale = 1;
+			Scale = Vector2.One;
 		}
 
 		public Vector2 Position { get; set; }
+		public Vector2 Scale { get; set; }
 		public Color Color { get; set; }
 
 		public float Rotation { get; set; }
-		public float Scale { get; set; }
 
 		public virtual void Update(float dt)
 		{
 		}
 
-		public abstract void Draw(SpriteBatch sb);
+		public abstract void Draw(SuperBatch sb);
 	}
 }

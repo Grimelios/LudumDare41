@@ -9,6 +9,6 @@ namespace LudumDare41.Interfaces
 {
 	public interface IRenderable
 	{
-		void Draw(SpriteBatch sb);
+		void Draw(SuperBatch sb);
 	}
 }

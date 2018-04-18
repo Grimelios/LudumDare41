@@ -10,7 +10,7 @@ namespace LudumDare41
 {
 	public static class GameFunctions
 	{
-		public static Point ComputeOrigin(Alignments alignments, int width, int height)
+		public static Vector2 ComputeOrigin(Alignments alignments, int width, int height)
 		{
 			bool left = (alignments & Alignments.Left) > 0;
 			bool right = (alignments & Alignments.Right) > 0;
@@ -20,7 +20,7 @@ namespace LudumDare41
 			int x = left ? 0 : (right ? width : width / 2);
 			int y = top ? 0 : (bottom ? height : height / 2);
 
-			return new Point(x, y);
+			return new Vector2(x, y);
 		}
 	}
 }
