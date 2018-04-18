@@ -60,6 +60,11 @@
     <Compile Include="Json\JsonUtilities.cs" />
     <Compile Include="MainGame.cs" />
     <Compile Include="Paths.cs" />
+    <Compile Include="Physics\PhysicsAccumulator.cs" />
+    <Compile Include="Physics\PhysicsConvert.cs" />
+    <Compile Include="Physics\PhysicsFactory.cs" />
+    <Compile Include="Physics\PhysicsUtilities.cs" />
+    <Compile Include="Physics\RaycastResults.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structures\SafeList.cs" />
@@ -84,6 +89,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Farseer\Farseer Physics MonoGame.csproj">
+      <Project>{0aad36e3-51a5-4a07-ab60-5c8a66bd38b7}</Project>
+      <Name>Farseer Physics MonoGame</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
